@@ -1,5 +1,5 @@
 services:
-  api_host: "localhost"
+  api_host: "nomad.mpie.de"
   api_base_path: "/nomad-oasis"
 
 oasis:
@@ -15,8 +15,8 @@ plugins:
 
 meta:
   deployment: "oasis"
-  deployment_url: "https://my-oasis.org/api"
-  maintainer_email: "me@my-oasis.org"
+  deployment_url: "https://nomad.mpie.de/api"
+  maintainer_email: "n.siemer@mpi-susmat.de"
 
 logstash:
   enabled: false
