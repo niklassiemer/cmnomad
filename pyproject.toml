@@ -1,9 +1,6 @@
 [build-system]
-requires = ["setuptools>=64", "setuptools-scm"]
+requires = ["setuptools>=64", "setuptools-scm>=8"]
 build-backend = "setuptools.build_meta"
-
-[tool.setuptools_scm]
-fallback_version = "0.0"
 
 [project]
 classifiers = [
@@ -20,7 +17,7 @@ dynamic = ["version"]
 readme = "README.md"
 requires-python = ">=3.10"
 license = { file = "LICENSE" }
-dependencies = ["nomad-lab[infrastructure]>=1.4.1",
+dependencies = ["nomad-lab[infrastructure]<=1.4.2rc1",
   "toposort",
   "nptyping",
 ]
@@ -69,7 +66,6 @@ dev = ["nomad-lab[infrastructure, dev]",
 ]
 
 [tool.uv]
-prerelease = "explicit"
 constraint-dependencies = ["flatdict>=4.1.0",
   "hyperspy>=1.7.6",
   "pillow<10.1",
@@ -88,3 +84,4 @@ nomad-gui = { index = "nomad-gui" }
 
 [tool.setuptools.packages.find]
 exclude = ["gui*", "docs*", "config*"]
+[tool.setuptools_scm]
