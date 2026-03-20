@@ -2389,6 +2389,7 @@ jupyter = [
 plugins = [
     { name = "nomad-north-jupyter" },
     { name = "nomad-parser-plugins-atomistic" },
+    { name = "nomad-schema-plugin-simulation-workflow" },
     { name = "nomad-simulation-apps" },
     { name = "nomad-simulations" },
 ]
@@ -2400,6 +2401,7 @@ requires-dist = [
     { name = "nomad-lab", extras = ["infrastructure"], specifier = ">=1.4.1" },
     { name = "nomad-north-jupyter", marker = "extra == 'plugins'", specifier = ">=0.2.1" },
     { name = "nomad-parser-plugins-atomistic", marker = "extra == 'plugins'", specifier = "==1.0.10" },
+    { name = "nomad-schema-plugin-simulation-workflow", marker = "extra == 'plugins'", specifier = "==1.0.11" },
     { name = "nomad-simulation-apps", marker = "extra == 'plugins'", specifier = "==0.1.2" },
     { name = "nomad-simulations", marker = "extra == 'plugins'", specifier = "==0.6" },
 ]
