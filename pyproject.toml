@@ -32,7 +32,7 @@ repository = "https://github.com/niklassiemer/cmnomad"
 [project.optional-dependencies]
 # Add your plugins to the list below.
 plugins = [
-  "nomad-gui>=2.0.0a2.dev459",
+  "nomad-gui",
   "nomad-simulations==0.6.0",
   "nomad-simulation-apps==0.1.2",
   "nomad-schema-plugin-run==1.0.5",
@@ -77,10 +77,10 @@ constraint-dependencies = ["flatdict>=4.1.0",
   "hyperspy>=1.7.6",
   "pillow<10.1",
 ]
-index = [
-  { name = "nomad-lab", url = "https://gitlab.mpcdf.mpg.de/api/v4/projects/2187/packages/pypi/simple" },
-  { name = "nomad-gui", url = "https://gitlab.mpcdf.mpg.de/api/v4/projects/8647/packages/pypi/simple" },
-]
+#index = [
+#  { name = "nomad-lab", url = "https://gitlab.mpcdf.mpg.de/api/v4/projects/2187/packages/pypi/simple" },
+#  { name = "nomad-gui", url = "https://gitlab.mpcdf.mpg.de/api/v4/projects/8647/packages/pypi/simple" },
+#]
 
 [tool.setuptools.packages.find]
 exclude = ["gui*", "docs*", "config*"]
