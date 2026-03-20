@@ -77,6 +77,10 @@ constraint-dependencies = ["flatdict>=4.1.0",
   "hyperspy>=1.7.6",
   "pillow<10.1",
 ]
+index = [
+  { name = "nomad-lab", url = "https://gitlab.mpcdf.mpg.de/api/v4/projects/2187/packages/pypi/simple" },
+  { name = "nomad-gui", url = "https://gitlab.mpcdf.mpg.de/api/v4/projects/8647/packages/pypi/simple" },
+]
 
 [tool.setuptools.packages.find]
 exclude = ["gui*", "docs*", "config*"]
