@@ -2377,7 +2377,6 @@ name = "nomad-distribution"
 source = { editable = "." }
 dependencies = [
     { name = "nomad-lab", extra = ["infrastructure"] },
-    { name = "pytest" },
 ]
 
 [package.optional-dependencies]
@@ -2405,7 +2404,6 @@ requires-dist = [
     { name = "nomad-schema-plugin-simulation-workflow", marker = "extra == 'plugins'", specifier = "==1.0.11" },
     { name = "nomad-simulation-apps", marker = "extra == 'plugins'", specifier = "==0.1.2" },
     { name = "nomad-simulations", marker = "extra == 'plugins'", specifier = "==0.6" },
-    { name = "pytest" },
 ]
 provides-extras = ["plugins", "jupyter", "gpu-action", "cpu-action", "dev"]
 
