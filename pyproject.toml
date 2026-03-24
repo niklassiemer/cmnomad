@@ -30,7 +30,11 @@ repository = "https://github.com/niklassiemer/cmnomad"
 # Add your plugins to the list below.
 plugins = [
  "nomad-north-jupyter>=0.2.1",
- "nomad-ikz-plugin @ git+https://github.com/IKZ-Berlin/nomad-ikz-plugin.git@v0.1.11"
+ "nomad-ikz-plugin @ git+https://github.com/IKZ-Berlin/nomad-ikz-plugin.git@v0.1.11",
+ "nomad-simulations==0.6",
+ "nomad-simulation-apps==0.1.2",
+ "nomad-parser-plugins-atomistic==1.0.10",
+ "nomad-schema-plugin-simulation-workflow==1.0.11",
   ]
 jupyter = ["jupyter-events"]
 gpu-action = []
