@@ -30,7 +30,7 @@ repository = "https://github.com/niklassiemer/cmnomad"
 # Add your plugins to the list below.
 plugins = [
  "nomad-north-jupyter>=0.2.1",
- "nomad-ikz-plugin @ git+https://github.com/niklassiemer/nomad-ikz-plugin.git@main_nsiemer",
+ "nomad-ikz-plugin @ git+https://github.com/niklassiemer/nomad-ikz-plugin.git@6b402c0c2bc9f4d1f834a24f7fb7a61430b0b6dd",
  "nomad-simulations==0.6",
  "nomad-simulation-apps==0.1.2",
  "nomad-parser-plugins-atomistic==1.0.10",
