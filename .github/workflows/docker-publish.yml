@@ -24,8 +24,18 @@ env:
   # simulationworkflowschema: upstream test bug in v1.0.11 (TestChemicalReactionWorkflow::test_system_checks
   # asserts reaction_energy is None after setting inconsistent lattice vectors, but the value persists
   # because normalization does not reset it on failure)
+  # nomad_ikz_plugin: test_characterization.py failures incompatible with current nomad version
+  # laytec_epitt_plugin: v0.0.1 has wrong github_url and structlog version conflict
+  # lakeshore_nomad_plugin: v0.0.1 has wrong github_url and structlog version conflict
   PLUGIN_TESTS_PLUGINS_TO_SKIP: |
     simulationworkflowschema
+    nomad_ikz_plugin
+    laytec_epitt_plugin
+    lakeshore_nomad_plugin
+  # App entry points with known upstream bugs in the current plugin version:
+  # movpesubstrateapp: uses data.tags (list) as search column, unsupported in nomad 1.4.1
+  # nomad_ikz_plugin/pld: returns 404 from detail endpoint, path resolution bug in nomad 1.4.1
+  APP_ENTRY_POINTS_TO_SKIP: "movpesubstrateapp,nomad_ikz_plugin/pld"
 
 permissions:
   contents: write

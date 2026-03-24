@@ -1,3 +1,4 @@
+import os
 from typing import TYPE_CHECKING
 import pytest
 
@@ -16,6 +17,14 @@ def test_app_entry_point(auth: "Auth", app):
     app_path = app.get("path")
     if not app_path:
         pytest.skip(f"App without path: {app}")
+
+    apps_to_skip = [
+        p.strip()
+        for p in os.environ.get("APP_ENTRY_POINTS_TO_SKIP", "").split(",")
+        if p.strip()
+    ]
+    if app_path in apps_to_skip:
+        pytest.skip(f"App '{app_path}' is in APP_ENTRY_POINTS_TO_SKIP")
 
     detail_url = f"apps/entry-points/{app_path}"
     resp = make_request_with_retry(get_request, detail_url, auth, check_status=False)

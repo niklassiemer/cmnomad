@@ -2510,7 +2510,7 @@ plugins = [
 [package.metadata]
 requires-dist = [
     { name = "jupyter-events", marker = "extra == 'jupyter'" },
-    { name = "nomad-ikz-plugin", marker = "extra == 'plugins'", git = "https://github.com/IKZ-Berlin/nomad-ikz-plugin.git?rev=v0.1.11" },
+    { name = "nomad-ikz-plugin", marker = "extra == 'plugins'", git = "https://github.com/niklassiemer/nomad-ikz-plugin.git?rev=main" },
     { name = "nomad-lab", extras = ["dev", "infrastructure"], marker = "extra == 'dev'" },
     { name = "nomad-lab", extras = ["infrastructure"], specifier = ">=1.4.1" },
     { name = "nomad-north-jupyter", marker = "extra == 'plugins'", specifier = ">=0.2.1" },
@@ -2524,7 +2524,7 @@ provides-extras = ["plugins", "jupyter", "gpu-action", "cpu-action", "dev"]
 [[package]]
 name = "nomad-ikz-plugin"
 version = "0.1.11"
-source = { git = "https://github.com/IKZ-Berlin/nomad-ikz-plugin.git?rev=v0.1.11#49490f3602ac315627cfe0b983cc1be3576759a0" }
+source = { git = "https://github.com/niklassiemer/nomad-ikz-plugin.git?rev=main#49490f3602ac315627cfe0b983cc1be3576759a0" }
 dependencies = [
     { name = "brukeropus" },
     { name = "lakeshore-nomad-plugin" },
