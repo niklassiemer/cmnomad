@@ -1738,17 +1738,6 @@ wheels = [
 ]
 
 [[package]]
-name = "lakeshore-nomad-plugin"
-version = "0.0.1"
-source = { git = "https://github.com/IKZ-Berlin/lakeshore-nomad-plugin.git?branch=main#69a6deb3f0e99d7b0dc66714105dd62a56f157e9" }
-dependencies = [
-    { name = "nomad-analysis" },
-    { name = "nomad-lab" },
-    { name = "nomad-material-processing" },
-    { name = "nomad-measurements" },
-]
-
-[[package]]
 name = "lark"
 version = "1.3.0"
 source = { registry = "https://gitlab.mpcdf.mpg.de/api/v4/projects/2187/packages/pypi/simple" }
@@ -2510,7 +2499,7 @@ plugins = [
 [package.metadata]
 requires-dist = [
     { name = "jupyter-events", marker = "extra == 'jupyter'" },
-    { name = "nomad-ikz-plugin", marker = "extra == 'plugins'", git = "https://github.com/niklassiemer/nomad-ikz-plugin.git?rev=main" },
+    { name = "nomad-ikz-plugin", marker = "extra == 'plugins'", git = "https://github.com/niklassiemer/nomad-ikz-plugin.git?rev=main_nsiemer" },
     { name = "nomad-lab", extras = ["dev", "infrastructure"], marker = "extra == 'dev'" },
     { name = "nomad-lab", extras = ["infrastructure"], specifier = ">=1.4.1" },
     { name = "nomad-north-jupyter", marker = "extra == 'plugins'", specifier = ">=0.2.1" },
@@ -2523,11 +2512,10 @@ provides-extras = ["plugins", "jupyter", "gpu-action", "cpu-action", "dev"]
 
 [[package]]
 name = "nomad-ikz-plugin"
-version = "0.1.11"
-source = { git = "https://github.com/niklassiemer/nomad-ikz-plugin.git?rev=main#49490f3602ac315627cfe0b983cc1be3576759a0" }
+version = "0.1.dev338+g7649a3244"
+source = { git = "https://github.com/niklassiemer/nomad-ikz-plugin.git?rev=main_nsiemer#7649a32448209a79b784c8438b4c2527a070ae7a" }
 dependencies = [
     { name = "brukeropus" },
-    { name = "lakeshore-nomad-plugin" },
     { name = "laytec-epitt-plugin" },
     { name = "nomad-analysis" },
     { name = "nomad-lab" },
