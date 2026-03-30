@@ -32,7 +32,7 @@ plugins = [
  "nomad-north-jupyter>=0.2.1",
  "nomad-simulations==0.6",
  "nomad-simulation-apps==0.1.2",
- "nomad-parser-plugins-atomistic==1.0.10",
+ "nomad-parser-plugins-atomistic==1.0.12",
  "nomad-schema-plugin-simulation-workflow==1.0.11",
   ]
 jupyter = ["jupyter-events"]
