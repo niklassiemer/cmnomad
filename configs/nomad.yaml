@@ -13,6 +13,12 @@ plugins:
         north_tool:
           image: ghcr.io/niklassiemer/cmnomad/jupyter:main
 
+auth:
+  require_authentication: true
+  reject_unauthorized_users: true
+  authorized_users:
+    - n.siemer@mpi-susmat.de
+
 meta:
   deployment: "oasis"
   deployment_url: "https://nomad.mpie.de/api"
