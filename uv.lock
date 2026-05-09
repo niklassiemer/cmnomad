@@ -2403,7 +2403,7 @@ requires-dist = [
     { name = "nomad-parser-plugins-atomistic", marker = "extra == 'plugins'", specifier = "==1.0.10" },
     { name = "nomad-schema-plugin-simulation-workflow", marker = "extra == 'plugins'", specifier = "==1.0.11" },
     { name = "nomad-simulation-apps", marker = "extra == 'plugins'", specifier = "==0.1.2" },
-    { name = "nomad-simulations", marker = "extra == 'plugins'", specifier = "==0.6" },
+    { name = "nomad-simulations", marker = "extra == 'plugins'", specifier = "==0.7.0" },
 ]
 provides-extras = ["plugins", "jupyter", "gpu-action", "cpu-action", "dev"]
 
@@ -2592,15 +2592,15 @@ wheels = [
 
 [[package]]
 name = "nomad-simulations"
-version = "0.6.0"
+version = "0.7.0"
 source = { registry = "https://gitlab.mpcdf.mpg.de/api/v4/projects/2187/packages/pypi/simple" }
 dependencies = [
     { name = "matid" },
     { name = "nomad-lab", extra = ["infrastructure"] },
 ]
-sdist = { url = "https://files.pythonhosted.org/packages/ca/5a/272f65c041e21064224a605fbc396bb2ecc2747d82aaaaacffbd5635bbbb/nomad_simulations-0.6.0.tar.gz", hash = "sha256:3a4642c36b4bb6e83f7b4a2de5e01227c0fe90a0b6c23190626e75e310f3c972", size = 762048, upload-time = "2026-01-02T10:14:53.914Z" }
+sdist = { url = "https://files.pythonhosted.org/packages/45/c9/14648d2d2aaa4626c9ec78f407a3915505868a8076883a61c734ac4ad32b/nomad_simulations-0.7.0.tar.gz", hash = "sha256:5056fdbf1997599f6cabcd56b4aad207fd856328812b0983b2a2815976c9994e", size = 1361168, upload-time = "2026-03-25T07:39:14.491Z" }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/6b/eb/ba4b6fc14f61e8374328e960478e629efb3795ffb80a102e137856102436/nomad_simulations-0.6.0-py3-none-any.whl", hash = "sha256:950fb143c1083ead2eb47555ec5b1b0b7947d6d197b9a7fddf8f5fb9d9d14013", size = 211475, upload-time = "2026-01-02T10:14:52.197Z" },
+    { url = "https://files.pythonhosted.org/packages/e3/f4/58c753f6b1945de5957cc1490009544cc1eb562bb8eddcac596af940f442/nomad_simulations-0.7.0-py3-none-any.whl", hash = "sha256:97767e414bdfd11caa21ef505e8bc875d74ad23d3922c2f5a26d428f24d99d2e", size = 234436, upload-time = "2026-03-25T07:39:13.302Z" },
 ]
 
 [[package]]
